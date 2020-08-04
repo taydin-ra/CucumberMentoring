@@ -36,8 +36,8 @@ public class personalPage extends BasePom {
 
     public void typeFirstName(String name) {
 
-        inputFirstname.sendKeys(Keys.CONTROL, Keys.chord("a"));
-        inputFirstname.sendKeys(Keys.BACK_SPACE);
+//        inputFirstname.sendKeys(Keys.CONTROL, Keys.chord("a"));
+//        inputFirstname.sendKeys(Keys.BACK_SPACE);
         inputFirstname.clear();
         sendKeysFunction(inputFirstname, name);
 
@@ -48,8 +48,6 @@ public class personalPage extends BasePom {
 
     public void typeLastName(String lastName) {
 
-//        inputLastName.sendKeys(Keys.CONTROL, Keys.chord("a"));
-//        inputLastName.sendKeys(Keys.BACK_SPACE);
         inputLastName.clear();
         sendKeysFunction(inputLastName, lastName);
     }
@@ -81,12 +79,12 @@ public class personalPage extends BasePom {
         sendKeysFunction(inputNewPassWord, newPassWord);
     }
 
-    @FindBy(xpath="//input[@name='confirmation']")
+    @FindBy(xpath = "//input[@name='confirmation']")
 
     private WebElement confirmation;
 
-    public void  ConfirmationBox(String confirm){
-        sendKeysFunction(confirmation,confirm);
+    public void ConfirmationBox(String confirm) {
+        sendKeysFunction(confirmation, confirm);
     }
 
     @FindBy(xpath = "//span[text()='Save']")

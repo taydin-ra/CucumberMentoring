@@ -43,7 +43,7 @@ public class accountPage  extends BasePom {
     }
 
     public void typeThePassword(String pswd) {
-        pswd = "123456";
+        pswd = "0123456789";
         sendKeysFunction(passwordBox, pswd);
     }
 

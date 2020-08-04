@@ -8,7 +8,7 @@ public class BaseDriver {
     private static WebDriver driver;
 
     /*
-    Singleton Pattern?
+    Singleton Pattern, restricts creating too many objects
      */
     public static WebDriver getDriver() {
         if (driver == null) {

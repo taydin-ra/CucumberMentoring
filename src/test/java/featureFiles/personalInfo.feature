@@ -9,7 +9,6 @@ Feature: Editing personal information
 
   Scenario Outline: Editing personal information
 
-
     And Click on My Personal Information
     And Click on social title
     And type to"<First name>"and "<Last name>" and "<E-mail address>"
@@ -19,4 +18,5 @@ Feature: Editing personal information
     Examples:
       | First name | Last name | E-mail address     | Current Password | New Password |
 
-      | Zzz        | TTT       | ttorun16@gmail.com | 123456           | 12345678     |
+      | Zeynepp     | Ucarr     | ttorun16@gmail.com | 0123456789        | 123456789    |
+
