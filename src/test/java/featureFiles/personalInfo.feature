@@ -18,5 +18,6 @@ Feature: Editing personal information
     Examples:
       | First name | Last name | E-mail address     | Current Password | New Password |
 
-      | Zeynepp     | Ucarr     | ttorun16@gmail.com | 0123456789        | 123456789    |
+      | Zeynepp    | Ucarr     | ttorun16@gmail.com | 0123456789       | 123456789    |
+      | Tuba       | Torun     | ttorun16@gmail.com | 0123456789       | 123456789    |
 

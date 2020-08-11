@@ -5,9 +5,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.BaseDriver;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BasePom {
@@ -64,5 +66,18 @@ public class BasePom {
         Assert.assertTrue(URL.contains( expectedResult )  );
 
     }
+    public void waitUntilVisible(WebElement elementToWait){
+
+        wait.until(ExpectedConditions.invisibilityOf(elementToWait));
+
+    }
+
+    public void selectInDropDown(WebElement dropdown, String visibleText){
+        Select select = new Select(dropdown);
+
+
+        select.selectByVisibleText(visibleText);
+    }
+
 
 }
