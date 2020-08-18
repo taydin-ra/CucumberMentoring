@@ -13,6 +13,7 @@ public class AddressLocators extends BasePom {
     public AddressLocators() {
         PageFactory.initElements(BaseDriver.getDriver(), this);
 
+
     }
 
     @FindBy(xpath = "//span[text()='My addresses']")
@@ -33,6 +34,9 @@ public class AddressLocators extends BasePom {
 
     @FindBy(css = " input#firstname")
     public WebElement firstNAme;
+
+
+
 
     @FindBy(css = " input#lastname")
     public WebElement lastNAme;

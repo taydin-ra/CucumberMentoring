@@ -26,7 +26,7 @@ public class AddressSteps extends BasePom {
 
     @Given("^Fill out the following$")
     public void fill_out_the_following(DataTable addressFields) {
-        Map<String, String> addressData=addressFields.asMap(String.class, String.class);
+        Map<String, String> addressData=addressFields.asMap(String.class,String.class);
 
         addressLocators.firstNAme.clear();
         addressLocators.sendKeysFunction(addressLocators.firstNAme,addressData.get("FirstName"));

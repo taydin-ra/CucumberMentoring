@@ -1,5 +1,5 @@
 Feature: Create an account
-  Scenario: Creating account
+  Scenario: Creating account with valid credentials
 
     Given Go to the website
     And Click on Sign In Tab

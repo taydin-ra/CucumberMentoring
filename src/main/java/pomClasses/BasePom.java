@@ -17,6 +17,7 @@ public class BasePom {
     WebDriverWait wait;
 
 
+
     public void waitMethod() {
 
         driver = BaseDriver.getDriver();
