@@ -27,6 +27,7 @@ public class personalPage extends BasePom {
     private WebElement socialTitleButton;
 
     public void clickOnSocialTitle() {
+
         clickOnFunctionalities(socialTitleButton);
     }
 

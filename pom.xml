@@ -44,11 +44,13 @@
             <version>6.8.7</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>3.0.6</version>
         </dependency>
+
         <dependency>
             <groupId>info.cukes</groupId>
             <!-- this integrates cucumber with testng -->
@@ -63,6 +65,11 @@
             <version>3.0.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.0</version>
+        </dependency>
     </dependencies>
 
 </project>

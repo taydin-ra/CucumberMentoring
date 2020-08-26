@@ -6,7 +6,8 @@ Feature: Login to basqar with different user
       | username | teacher_abai_school |
       | password | =pkFg4tf60AW      |
     Then User should login successfully
-@SmokeTest
+
+@RegTest
   Scenario: Create a Nationalities
     And Navigate to Nationalities page
     When User create a Nationalities

@@ -38,7 +38,7 @@ public class accountPage  extends BasePom {
 
 
     public void typeTheEmail(String email) {
-        email = "ttorun16@gmail.com";
+       // email = "ttorun16@gmail.com";
 
         sendKeysFunction(emailBox, email);
     }

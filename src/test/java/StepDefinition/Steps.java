@@ -38,7 +38,7 @@ public class Steps extends BasePom {
 
 
     @Given("^type to \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void type_to_and(String arg1, String arg2) throws Throwable {
+    public void type_to_and(String arg1, String arg2)  {
         ap.typeTheEmail(arg1);
         ap.typeThePassword(arg2);
     }

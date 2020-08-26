@@ -15,9 +15,11 @@ Feature: Editing personal information
     And type "<Current Password>"and "<New Password>"
     And type in the confirm password "<New Password>"
     And Click on Save button
-    Examples:
-      | First name | Last name | E-mail address     | Current Password | New Password |
 
+    Examples:
+
+      | First name | Last name | E-mail address     | Current Password | New Password |
       | Zeynepp    | Ucarr     | ttorun16@gmail.com | 0123456789       | 123456789    |
       | Tuba       | Torun     | ttorun16@gmail.com | 0123456789       | 123456789    |
+
 
