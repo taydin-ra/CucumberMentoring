@@ -47,12 +47,13 @@ public class BasqarRestAssured {
         ItemCategory item = new ItemCategory();
         List<String> roleList = new ArrayList<>();
         roleList.add("5b8bedceb1e0bfc07b008829");
+
         item.setActive(true);
         item.setName("TechnoIte213");
         item.setSchoolId("5c5aa8551ad17423a4f6ef1d");
         item.setRoles(roleList);
 
-        String itemId = given()
+        List<String> itemId = given()
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .body(item)
@@ -61,7 +62,8 @@ public class BasqarRestAssured {
                 .then()
                 .log().body()
                 .statusCode(201)
-                .extract().jsonPath().getString("id");
+                .extract().jsonPath().getList("roles",String.class)
+                ;
 
         // search our item
 
