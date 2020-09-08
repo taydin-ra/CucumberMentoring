@@ -1,4 +1,4 @@
-package restAssured;
+package pojoClasses;
 
 import java.util.List;
 

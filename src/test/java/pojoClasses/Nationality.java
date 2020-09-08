@@ -1,4 +1,4 @@
-package restAssured;
+package pojoClasses;
 
 public class Nationality {
     /*

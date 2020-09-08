@@ -3,6 +3,7 @@ package restAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Cookies;
 import org.testng.annotations.Test;
+import pojoClasses.Nationality;
 
 import java.util.HashMap;
 import java.util.List;

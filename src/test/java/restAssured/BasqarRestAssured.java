@@ -1,9 +1,9 @@
 package restAssured;
 
-import cucumber.api.java.ca.I;
 import io.restassured.http.ContentType;
 import io.restassured.http.Cookies;
 import org.testng.annotations.Test;
+import pojoClasses.ItemCategory;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,7 +12,6 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
 
 public class BasqarRestAssured {
             /*
